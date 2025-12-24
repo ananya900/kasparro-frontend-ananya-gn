@@ -36,8 +36,6 @@ The frontend represents **two main product surfaces**:
 
 ## 🗂 Folder Structure
 
-## 🗂 Folder Structure
-
 app/
 ├── app/
 │   ├── dashboard/        # High-level brand snapshot
