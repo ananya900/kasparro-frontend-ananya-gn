@@ -110,6 +110,11 @@ app/
 **Ananya GN**  
 Frontend Engineering Assignment – Kasparro
 
+## 🚀 Live Demo
+
+👉 https://kasparro-frontend-ananya-gn.vercel.app/dashboard
+
+
 ## 🚀 Running the Project Locally
 
 ```bash
