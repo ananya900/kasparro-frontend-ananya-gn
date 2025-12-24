@@ -92,7 +92,7 @@ app/
 
 ## 🚀 Running the Project Locally
 
-```bash
+
 npm install
 npm run dev
 
