@@ -94,9 +94,8 @@ app/
 
 ```bash
 npm install
-
 npm run dev
----
+
 
 ## 🧪 Assumptions & Tradeoffs
 - Authentication is mocked
