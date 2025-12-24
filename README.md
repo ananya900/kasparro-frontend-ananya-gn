@@ -90,13 +90,6 @@ app/
 
 ---
 
-## 🚀 Running the Project Locally
-
-``bash
-npm install
-npm run dev
-
-
 ## 🧪 Assumptions & Tradeoffs
 - Authentication is mocked
 - No backend integration
@@ -112,6 +105,13 @@ npm run dev
 
 ---
 
+
 ## 👤 Author
 **Ananya GN**  
 Frontend Engineering Assignment – Kasparro
+
+## 🚀 Running the Project Locally
+
+```bash
+npm install
+npm run dev
