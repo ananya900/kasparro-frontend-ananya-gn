@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <main style={{ padding: "40px", color: "white" }}>
@@ -5,9 +7,15 @@ export default function Home() {
       <p>Public Homepage</p>
 
       <ul>
-        <li>/dashboard</li>
-        <li>/audit</li>
-        <li>/architecture</li>
+        <li>
+          <Link href="/dashboard">/dashboard</Link>
+        </li>
+        <li>
+          <Link href="/audit">/audit</Link>
+        </li>
+        <li>
+          <Link href="/architecture">/architecture</Link>
+        </li>
       </ul>
     </main>
   );
