@@ -1,0 +1,115 @@
+[
+  {
+    "id": "ai-visibility",
+    "title": "AI Visibility",
+    "score": 82,
+    "insights": [
+      "Brand appears in AI-generated answers",
+      "Entity partially recognized across platforms"
+    ],
+    "issues": [
+      "Weak non-branded keyword association",
+      "Inconsistent citations"
+    ],
+    "recommendations": [
+      "Improve structured data",
+      "Strengthen topical authority"
+    ]
+  },
+  {
+    "id": "brand-entity",
+    "title": "Brand Entity Recognition",
+    "score": 74,
+    "insights": [
+      "Brand entity exists but lacks depth",
+      "Limited relationship mapping"
+    ],
+    "issues": [
+      "Missing entity attributes",
+      "Low co-occurrence with category terms"
+    ],
+    "recommendations": [
+      "Expand brand schema",
+      "Increase contextual mentions"
+    ]
+  },
+  {
+    "id": "trust-eeat",
+    "title": "Trust & EEAT",
+    "score": 76,
+    "insights": [
+      "Author signals partially present",
+      "Brand cited by some trusted sources"
+    ],
+    "issues": [
+      "Inconsistent author attribution",
+      "Low expert citation density"
+    ],
+    "recommendations": [
+      "Add author profiles",
+      "Increase expert-authored content"
+    ]
+  },
+  {
+    "id": "non-branded",
+    "title": "Non-Branded Keyword Coverage",
+    "score": 68,
+    "insights": [
+      "Brand appears for some category queries"
+    ],
+    "issues": [
+      "Low visibility for generic problem queries"
+    ],
+    "recommendations": [
+      "Create content for non-branded intents",
+      "Improve semantic coverage"
+    ]
+  },
+  {
+    "id": "citations",
+    "title": "Citation Consistency",
+    "score": 71,
+    "insights": [
+      "Brand is cited across multiple platforms"
+    ],
+    "issues": [
+      "Name variations across sources",
+      "Outdated references"
+    ],
+    "recommendations": [
+      "Standardize brand naming",
+      "Update external citations"
+    ]
+  },
+  {
+    "id": "knowledge-graph",
+    "title": "Knowledge Graph Strength",
+    "score": 65,
+    "insights": [
+      "Partial graph presence detected"
+    ],
+    "issues": [
+      "Missing relationships",
+      "Sparse attribute coverage"
+    ],
+    "recommendations": [
+      "Enhance schema markup",
+      "Increase authoritative mentions"
+    ]
+  },
+  {
+    "id": "content-alignment",
+    "title": "Content–Intent Alignment",
+    "score": 79,
+    "insights": [
+      "Content matches major user intents"
+    ],
+    "issues": [
+      "Some intent gaps remain"
+    ],
+    "recommendations": [
+      "Create intent-specific pages",
+      "Refine content structure"
+    ]
+  }
+]
