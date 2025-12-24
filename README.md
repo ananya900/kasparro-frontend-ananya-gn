@@ -36,16 +36,18 @@ The frontend represents **two main product surfaces**:
 
 ## 🗂 Folder Structure
 
+## 🗂 Folder Structure
+
 app/
 ├── app/
-│ ├── dashboard/ # High-level brand snapshot
-│ ├── audit/ # Core audit modules view
-│ ├── architecture/ # System architecture representation
+│   ├── dashboard/        # High-level brand snapshot
+│   ├── audit/            # Core audit modules view
+│   ├── architecture/     # System architecture representation
 │
-├── components/ # Reusable UI components
-├── data/ # Mocked JSON data
-├── globals.css # Global styles
-└── layout.tsx # Root layout
+├── components/           # Reusable UI components
+├── data/                 # Mocked JSON data
+├── globals.css           # Global styles
+└── layout.tsx            # Root layout
 
 ---
 
