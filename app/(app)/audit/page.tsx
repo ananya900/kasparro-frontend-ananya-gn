@@ -1,13 +1,19 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import modules from "../../data/audit-modules.json";
+import { AuditModule } from "../../../types/audit";
+import rawModules from "../../data/audit-modules.json";
+
+const modules: AuditModule[] = rawModules;
+
 
 export default function AuditPage() {
-  const [selectedId, setSelectedId] = useState(modules[0].id);
-  const [loading, setLoading] = useState(false);
+  const [selectedId, setSelectedId] = useState<string>(modules[0].id);
+  const [loading, setLoading] = useState<boolean>(false);
 
-  const selectedModule = modules.find((m) => m.id === selectedId);
+  const selectedModule: AuditModule | undefined = modules.find(
+    (m) => m.id === selectedId
+  );
 
   useEffect(() => {
     setLoading(true);
@@ -54,7 +60,9 @@ export default function AuditPage() {
         ) : (
           <>
             <div className="flex items-center gap-4 mb-6">
-              <h1 className="text-3xl font-bold">{selectedModule.title}</h1>
+              <h1 className="text-3xl font-bold">
+                {selectedModule.title}
+              </h1>
               <span className="px-4 py-1 rounded-full bg-indigo-500/20 text-indigo-300">
                 Score: {selectedModule.score}
               </span>
@@ -89,7 +97,9 @@ function Section({
 }) {
   return (
     <section className="mb-6">
-      <h3 className={`text-xl font-semibold mb-2 ${color}`}>{title}</h3>
+      <h3 className={`text-xl font-semibold mb-2 ${color}`}>
+        {title}
+      </h3>
       <ul className="list-disc pl-6 space-y-1 text-zinc-300">
         {children.map((item, i) => (
           <li key={i}>{item}</li>
