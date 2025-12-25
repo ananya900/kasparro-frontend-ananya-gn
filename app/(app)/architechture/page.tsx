@@ -1,89 +1,56 @@
-"use client";
-
-const architecture = [
-  {
-    title: "Input Assembler",
-    color: "from-indigo-500 to-purple-600",
-    items: [
-      "Website content",
-      "Brand metadata",
-      "SERP & keyword data",
-      "AI platform query samples",
-    ],
-  },
-  {
-    title: "Context Pack",
-    color: "from-emerald-500 to-teal-600",
-    items: [
-      "Brand entity graph",
-      "Topic clusters",
-      "Author & EEAT signals",
-      "Citation sources",
-    ],
-  },
-  {
-    title: "Audit Modules",
-    color: "from-sky-500 to-cyan-600",
-    items: [
-      "AI Visibility",
-      "Brand Entity Recognition",
-      "Trust & EEAT",
-      "Non-Branded Keyword Coverage",
-      "Citation Consistency",
-      "Knowledge Graph Strength",
-      "Content-Intent Alignment",
-    ],
-  },
-  {
-    title: "Output Surfaces",
-    color: "from-zinc-700 to-zinc-800",
-    items: [
-      "Dashboard metrics",
-      "Module-level insights",
-      "Issue flags",
-      "Actionable recommendations",
-    ],
-  },
-];
-
 export default function ArchitecturePage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-black via-zinc-900 to-black text-white p-10">
-      
-      {/* Header */}
-      <div className="mb-12">
-        <h1 className="text-3xl font-bold mb-2">
-          Kasparro System Architecture
-        </h1>
-        <p className="text-zinc-400 max-w-2xl">
-          A high-level representation of how Kasparro ingests data, builds AI-native
-          context, evaluates brand presence across AI search systems, and produces
-          actionable outputs.
-        </p>
-      </div>
+    <main className="max-w-6xl mx-auto px-8 py-16 text-white">
+      <h1 className="text-4xl font-bold mb-6 text-indigo-400">
+        Platform Architecture
+      </h1>
 
-      {/* Architecture Flow */}
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
-        {architecture.map((block) => (
-          <div
-            key={block.title}
-            className={`rounded-2xl p-6 bg-gradient-to-br ${block.color} shadow-lg`}
-          >
-            <h2 className="text-xl font-semibold mb-4">
-              {block.title}
-            </h2>
+      <p className="text-gray-300 mb-6">
+        This section outlines the high-level frontend architecture of the
+        Kasparro platform, designed for scalability, clarity, and modularity.
+      </p>
 
-            <ul className="space-y-2 text-white/90">
-              {block.items.map((item) => (
-                <li key={item} className="flex items-start gap-2">
-                  <span className="mt-1 h-1.5 w-1.5 rounded-full bg-white/80" />
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-        ))}
-      </div>
-    </div>
+      <section className="space-y-4 text-gray-300">
+        <div>
+          <h2 className="text-xl font-semibold text-indigo-300">
+            Frontend Framework
+          </h2>
+          <p>
+            Built using Next.js App Router with TypeScript for strong typing
+            and predictable routing.
+          </p>
+        </div>
+
+        <div>
+          <h2 className="text-xl font-semibold text-indigo-300">
+            Component Structure
+          </h2>
+          <p>
+            Components are modular, reusable, and separated by responsibility
+            (layout, data display, navigation).
+          </p>
+        </div>
+
+        <div>
+          <h2 className="text-xl font-semibold text-indigo-300">
+            Data Handling
+          </h2>
+          <p>
+            Mocked JSON data is used to simulate backend responses and is typed
+            using TypeScript interfaces.
+          </p>
+        </div>
+
+        <div>
+          <h2 className="text-xl font-semibold text-indigo-300">
+            Styling
+          </h2>
+          <p>
+            Tailwind CSS is used for consistent styling, responsive layouts,
+            and rapid UI development.
+          </p>
+        </div>
+      </section>
+    </main>
   );
 }
